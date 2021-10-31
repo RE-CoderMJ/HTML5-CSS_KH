@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 종합 실습 문제2</title>
+</head>
+<body>
+    
+    <form action="test.do">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+                <li><label for="name">납품자명 : </label>
+                <input type="text" name="sName" id="name" placeholder="name"></li> <br>
+                <li><label for="email">email : </label>
+                <input type="email" name="email" id ="email" placeholder="answs@naver.com"></li> <br>
+                <li><label for="homepage">홈페이지 : </label>
+                <input type="url" name="homepage" id="homepage" value="http://"></li>
+                </li>    
+            </ol>
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>납품정보</legend>
+            <ul>
+                <li><label for="pName">상품명 : </label><input type="text" name="pName" id="pName"></li><br>
+                <li><label for="quantitiy">납품수량 : </label><input type="number" name="quantity" id="quantitiy" placeholder="최소 100" min="100"></li> <br>
+                <li><label for="rank">납품등급 : </label><input type="range" name="rank" id="rank"></li><br>
+                <li><label for="etc">기타사항 : </label><textarea name="etc" id="etc"></textarea></li>
+            </ul>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="send message">
+    </form>
+</body>
+</html>
